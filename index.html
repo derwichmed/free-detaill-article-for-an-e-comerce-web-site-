@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="jquery-3.2.1.min.js"></script>
+        <style>
+            body{
+                background-color: #f1f1f1
+            }
+            .path{
+                height: 50px;
+                margin-top: 50px
+            }
+            .path ul li{
+                list-style: none;
+                display: inline;
+            }
+            .path a{
+                color: #9d875e;
+                text-decoration: none
+            }
+            .detaill_article > div:first-child ul{
+                display: block;
+                overflow-x: scroll
+            }
+            .detaill_article > div:first-child ul li{
+                list-style: none;
+                width: 50px;
+                height: 50px;
+                margin-bottom: 8px;
+            }
+            .detaill_article > div:first-child ul li img{
+                width: 100%;
+                height: 100%
+            }
+            .article_color ul li{
+                list-style: none;
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                margin-right: 10px
+            }
+            .article_color ul li img{
+                width: 100%;
+                height: 100%;
+                border-radius: 100px;
+                border: #bdbdbd 1px solid
+            }
+            .article_qty ul{
+                height: 50px
+            }
+            .article_qty ul li{
+                list-style: none;
+                display: inline-block;
+                margin: 0px
+            }
+            .article_rx ul li{
+                list-style: none;
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+            }
+            .article_rx ul li img{
+                width: 100%;
+                height: 100%;
+            }
+            .article_rx ul{
+                padding: 0px
+            }
+            @media(max-width: 500px){
+                .detaill_article > div:first-child ul li{
+                    display: inline-block
+                }
+            }
+            
+        </style>
+        <script>
+            $(function (){
+                $('.detaill_article > div:first-child ul li img').click(function (){
+                    $('.detaill_article > div:nth-child(2) img').attr('src',$(this).attr('src')+'.png')
+                });
+            });
+        </script>
+    </head>
+    <body class="container-fluid">
+        <div class="row path">
+            <ul>
+                <li><a href="">HOME /</a> </li><li><a href="">PRODUCTS /</a> </li><li>Zerimar</li>
+            </ul>
+        </div>
+        <div class="row detaill_article" style="overflow-x: scroll">
+            <div class="col-lg-1" style="overflow-x: scroll">
+                <ul style="overflow-x: scroll">
+                    <li>
+                        <img src="1.jpg"/>
+                    </li>
+                    <li>
+                        <img src="2.jpg"/>
+                    </li>
+                    <li>
+                        <img src="3.jpg"/>
+                    </li>
+                    <li>
+                        <img src="4.jpg"/>
+                    </li>
+                    <li>
+                        <img src="5.jpg"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-5 offset-lg-1" style="overflow-x: scroll">
+                <img src="1.jpg.png"/>
+            </div>
+            <div class="col-lg">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col"> 
+                        <div style="
+                             background-color: #2d3640;
+                             height: 80px;
+                             width: 80px;
+                             border-radius: 100px;
+                             color: white;
+                             text-align: center;
+                             padding-top: 25px
+                             ">
+                            <em>
+                                New
+                            </em>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                        <div class="col">
+                            <p style="
+                               color: #9d875e;
+                               font-size: 20px
+                               ">Bang + Olufsen</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h1>Zerimar Sandales</h1>
+                        </div>
+                    </div>
+                    <hr style="background-color: #bdbdbd"/>
+                    <div class="row" style="margin-top: 20px">
+                        <div class="col">
+                            <em style="font-weight: bold;text-decoration: underline">PRICE: 500.5$</em>
+                        </div>
+                    </div>
+                    <div class="row" style="
+                         margin-top: 20px;
+                         color: #545454;
+                         font-size: 1em;
+                         ">
+                        <div class="col">
+                            <p style="text-align: justify">
+                                Top: Premium Leather Breathable and easy to dry. Ideal for all types of terrain.
+Lining: Non-slip padded insole Adapts to the foot and holds firm and secure hold.
+Sole material: Rubber Outsole made of natural rubber with high resistance to slip and abrasion. Design with damping and drainage function.
+Closure: Velcro Maintains a firm and secure hold to prevent falls. Easy to put on and take off.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <em style="font-weight: bold;font-size: 15px;text-decoration: underline">COLORS:</em>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col article_color" style="padding: 0px">
+                            <ul style="padding: 0px">
+                                <li><img src="color_1.jpg"/></li>
+                                <li><img src="color_2.jpg"/></li>
+                                <li><img src="color_3.jpg"/></li>
+                                <li><img src="color_4.jpg"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 50px">
+                        <div class="col">
+                            <em style="font-weight: bold">
+                                QTY
+                            </em>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col article_qty">
+                            <input type="button" value="-" style="width: 40px"/>
+                            <input type="text" style="width: 70px"/>
+                            <input type="button" value="+" style="width: 40px"/>
+                            <input type="button" value="ADD TO CART" style="
+                                   color: white;
+                                   background-color: #9d875e;
+                                   border-radius: 10px;
+                                   border: none;
+                                   height: 35px;
+                                   width: 150px
+                                   "/>
+                        </div>
+                    </div>
+                    <hr style="background-color: #bdbdbd"/>
+                    <div class="row">
+                        <div class="col article_rx">
+                            <ul>
+                                <li><img src="twitter-circle-128.png"/></li>
+                                <li><img src="facebook-circle-512.png"/></li>
+                                <li><img src="google-png-5a3554027e9924.3682726615134443545186.jpg"/></li>
+                                <li><img src="pinterest.png"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
